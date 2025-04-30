@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'livraria',
     'rest_framework',
     'corsheaders',
-    'rest_framework_simplejwt'
+    'rest_framework_simplejwt',
+    'usuario'
 ]
 
 MIDDLEWARE = [
@@ -135,3 +136,4 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOW_ALL_ORIGINS = True
+AUTH_USER_MODEL = "usuario.Usuario"
