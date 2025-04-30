@@ -11,6 +11,8 @@ dependencies = [
     "django-cors-headers>=4.7.0",
     "djangorestframework-simplejwt>=5.5.0",
     "setuptools>=80.0.1",
+    "Pillow>=11.2.1",
+    "python-magic>=0.4.27; sys_platform == \"linux\"",
 ]
 requires-python = "==3.11.*"
 readme = "README.md"
