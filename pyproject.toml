@@ -13,6 +13,7 @@ dependencies = [
     "setuptools>=80.0.1",
     "Pillow>=11.2.1",
     "python-magic>=0.4.27; sys_platform == \"linux\"",
+    "drf-spectacular>=0.28.0",
 ]
 requires-python = "==3.11.*"
 readme = "README.md"
@@ -21,3 +22,15 @@ license = {text = "MIT"}
 
 [tool.pdm]
 distribution = false
+
+[tool.pdm.scripts]
+dev = "python manage.py runserver"
+runserver = "python manage.py runserver"
+createsuperuser = "python manage.py createsuperuser"
+migrate = "python manage.py migrate"
+makemigrations = "python manage.py makemigrations"
+shell = "python manage.py shell"
+test = "python manage.py test"
+startapp = "python manage.py startapp {args}"
+loaddata = "python manage.py loaddata {args}"
+dumpdata = "python manage.py dumpdata {args}"

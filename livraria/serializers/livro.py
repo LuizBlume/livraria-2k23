@@ -13,6 +13,9 @@ class LivroSerializer(ModelSerializer):
         write_only=True,
     )
     capa = ImageSerializer(required=False, read_only=True)
+    class Meta:
+        model = Livro
+        fields = ["titulo", "preco", "capa_attachment_key", "capa"]
 
 class LivroDetailSerializer(ModelSerializer):
     class Meta:
